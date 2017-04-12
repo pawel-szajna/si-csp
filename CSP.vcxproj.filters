@@ -3,8 +3,10 @@
   <ItemGroup>
     <ClCompile Include="main.cc" />
     <ClCompile Include="nqueens.cc" />
+    <ClCompile Include="colour.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="nqueens.hh" />
+    <ClInclude Include="colour.hh" />
   </ItemGroup>
 </Project>

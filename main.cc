@@ -1,6 +1,7 @@
 #include <iostream>
 #include <sstream>
 
+#include "colour.hh"
 #include "nqueens.hh"
 
 template<typename T>
@@ -19,7 +20,7 @@ T lexical_cast(std::string value)
 
 int main(int argc, char** argv)
 {
-	int n = 10;
+	int n = 3;
 	int m = nqueens::FORWARD;
 	if (argc > 1) {
 		n = lexical_cast<int>( argv[1] );
@@ -28,7 +29,8 @@ int main(int argc, char** argv)
 		m = lexical_cast<int>( argv[2] );
 	}
 	int visited, solutions;
-	nqueens::solve(n, m, visited, solutions);
+	//nqueens::solve(n, m, visited, solutions);
+	colour::solve(n, m, visited, solutions);
 	std::cout << visited << " " << solutions << "\n";
 	return 0;
 }

@@ -96,6 +96,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <StackReserveSize>1073741824</StackReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -112,10 +113,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="colour.cc" />
     <ClCompile Include="main.cc" />
     <ClCompile Include="nqueens.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="colour.hh" />
     <ClInclude Include="nqueens.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
